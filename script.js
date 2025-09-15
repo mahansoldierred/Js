@@ -1,19 +1,51 @@
-//primitve(value) types
-//string
-//number
-//bool
-//undifined
-//null
+//Reference types
+//Opject
+//Array
+//Function
 
-//string
-let name = "mahan" ;
-//number
-let age = 32 ;
-//bool
-let admin = true ;
-//undifined
-let lname;
-//null
-let fname= null;
+let name = "mahan";
+let age = 17;
+let admin = true;
 
-console.log(name);
+//Opject
+let person = {
+    name : "mahan",
+    age : 17,
+    admin : true
+}
+
+console.log(person)
+
+console.log(person.age);
+
+console.log(person["admin"]);
+
+//Array
+let users = ["mahan","ali"];
+users[2] = "ahmad";
+users[1] = "amir";
+users[3] = 2;
+users[4] = true;
+
+console.log(users);
+
+console.log(users);
+
+console.log(users[1]);
+
+//Function
+//اونی که داخل پرانتزه میگن پارامتر
+function greet(name,age){
+    console.log(' hello '+ name + " your are " + age + " years old");
+}
+//به اونی که موقع صدا زدن تو پرانتزه میگن ارگومان
+let result1 = greet("mahan",17);
+console.log(result1);
+
+
+function square(number){
+    let result = number*number ;
+    return result;
+}
+let result = square(4);
+console.log(result);
