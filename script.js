@@ -1,13 +1,20 @@
-let x= 10;
-let y= 3;
+let x = 1;
+//relational
+// > < >= <=
 
-// += -= *= /= %=
-x =  x + y;
-x += y , x++;
-x *= y;
-x -= y, x--;
-x /= y;
-x %= y;
+console.log(x > 1);
+console.log(x >= 1);
+console.log(x <= 1);
+console.log(x < 1);
 
-console.log(x);
+//equality
+//lose equality
+// == !=
+console.log(x == 1);
+console.log(x != 1);
+//strict equality
+// === !===
+console.log('1' === 1);
+console.log(x !== 1);
+
 
