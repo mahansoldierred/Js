@@ -1,13 +1,8 @@
-console.log(false || true);
-console.log(false || "mahan");
-console.log( false || 0 || false );
-console.log( false || 1 || false );
-console.log(false || "mahan" || false );
-console.log(false && 1);
-console.log("" && 1);
-console.log(0 && 1);
-console.log( true && 0 && "mahan");
+// 1 ,2 , 100
+// 00000001 = 1
+// 00000010 = 2
+// 00000000 = 0
+ console.log( 1 | 2);
 
-// falses
-// false , undifined , null , 0 , "" , NaN
-//true , 1 ,-2   
+ // bitwise AND : &
+ // bitwise OR : |
