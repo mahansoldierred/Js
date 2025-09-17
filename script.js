@@ -1,20 +1,17 @@
-let i= 0;
+let radius = 1 ;
+let x = 1;
+let y = 1;
 
-while(i<=10){
-    if(i==5){
-        break;
-    }
-    console.log(i);
-    i++;
-}
+function drow(){}
 
-let x= 0;
+let circle = {
+    radius : 1,
+    location: {
+    x : 1,
+    y : 1,
+    },
+    isVisible :true,
+    drow : function(){ console.log('drow')}
+};
 
-while(x<=10){
-    if(x==5){
-        x++;
-        continue;
-    }
-    console.log(x);
-    x++;
-}
+circle.drow();
