@@ -1,22 +1,14 @@
-// camel notation : oneTwoThree/Factory function
-// pascal notation : OneTwoThree/constructor function
-//Factory function
-function createCircle(radius){
-    return {
-        radius,
-    draw(){ console.log('draw')}
-}
-    }
-const mycircle = createCircle(1);
-//constructor function
-
-function Circle(radius){
-    this.radius = radius;
-    this.drow = function(){
-        console.log(drow);
-        
-    }
+const Circle = {
+    radius : 1
 }
 
-const circle = new Circle(3);
-console.log(circle);
+
+Circle.color = "red";
+Circle.draw = function(){
+
+}
+
+delete Circle.radius;
+delete Circle.draw;
+
+console.log(Circle);
