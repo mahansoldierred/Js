@@ -1,17 +1,15 @@
-let radius = 1 ;
-let x = 1;
-let y = 1;
 
-function drow(){}
 
-let circle = {
-    radius : 1,
-    location: {
-    x : 1,
-    y : 1,
-    },
-    isVisible :true,
-    drow : function(){ console.log('drow')}
-};
+//Factory function
+function createCircle(radius){
+    return {
+        radius,
+    draw(){ console.log('draw')}
+}
+    }
 
-circle.drow();
+let circle1 = createCircle(1);
+console.log(circle1);
+
+let circle2 = createCircle(2);
+console.log(circle2);
