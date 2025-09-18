@@ -1,14 +1,28 @@
-const Circle = {
-    radius : 1
+//Factory Function
+function createCircle(radius){
+    return {
+        radius ,
+        draw(){ console.log('draw')}
+    }
 }
 
+const circle = createCircle(1);
 
-Circle.color = "red";
-Circle.draw = function(){
+//Constructor Function
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
 
-}
+} 
 
-delete Circle.radius;
-delete Circle.draw;
+const another = new Circle(3);
 
-console.log(Circle);
+let x = {};
+//let x = new Object();
+new String("mahan");
+let name = "mahan";
+new Boolean()
+let y = true;
+new Number();
