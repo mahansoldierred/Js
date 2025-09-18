@@ -1,28 +1,22 @@
-//Factory Function
-function createCircle(radius){
-    return {
-        radius ,
-        draw(){ console.log('draw')}
-    }
-}
-
-const circle = createCircle(1);
-
-//Constructor Function
 function Circle(radius){
     this.radius = radius;
     this.draw = function(){
         console.log('draw');
     }
 
-} 
+}
 
 const another = new Circle(3);
 
-let x = {};
-//let x = new Object();
-new String("mahan");
-let name = "mahan";
-new Boolean()
-let y = true;
-new Number();
+// const circle1 = new Function('radius' ,`
+//         this.radius = radius;
+//     this.draw = function(){
+//         console.log('draw');
+//     }
+//     `);
+
+//     const circle = new circle1(5);
+//     console.log(circle);
+//برابر با new Circle(3)
+Circle.call({}, 9);
+Circle.apply({}, [9]);
