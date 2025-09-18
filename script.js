@@ -1,22 +1,26 @@
-function Circle(radius){
-    this.radius = radius;
-    this.draw = function(){
-        console.log('draw');
-    }
+// value types(primitive)
+//number
+//string
+//boolean
+//symblol
+//undifined
+//null
 
+//Refernce types
+//object
+//function
+//array
+
+// let x = {value : 10};
+// let y = x;
+
+// x.value = 20
+
+// console.log(x);
+
+let obj = {vlaue : 10};
+function increase(obj){
+    obj.vlaue++;
 }
-
-const another = new Circle(3);
-
-// const circle1 = new Function('radius' ,`
-//         this.radius = radius;
-//     this.draw = function(){
-//         console.log('draw');
-//     }
-//     `);
-
-//     const circle = new circle1(5);
-//     console.log(circle);
-//برابر با new Circle(3)
-Circle.call({}, 9);
-Circle.apply({}, [9]);
+increase(obj);
+console.log(obj);
