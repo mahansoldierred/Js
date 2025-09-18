@@ -5,25 +5,13 @@ const circle = {
     }
 }
 
-if('radius' in circle){
-    console.log('yes');
-    console.log('draw' in circle)
-}
-// for (let key in circle){
-//     console.log(circle[key])
+// const another = {} ;
+// for(let key in circle){
+//     another[key]= circle[key]
 // }
 
-// for (let key of circle){
-//     console.log(key)
-// }
+// const another = Object.assign({color : 'red'}, circle )
 
-// let circlekeys = Object.keys(circle);
-// console.log(circlekeys);
+const another= { location : 1, ...circle , color : 'red'}
 
-// for(let key of circlekeys)
-//     console.log(key);
-
-// let circleEntries = Object.entries(circle);
-// for(let entry of circleEntries){
-//     console.log(entry);
-// }
+console.log(another);
