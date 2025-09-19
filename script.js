@@ -1,17 +1,11 @@
-const circle = {
-    radius : 1 ,
-    draw(){
-        console.log('draw');
-    }
+Math.PI;
+Math.random();
+Math.round(1,9);
+Math.max(1,2,3,13);
+Math.min(1,2,3,13);
+Math.abs(-1)
+
+function getRandomArbitrary(min,max){
+    return Math.floor(Math.random() * (max - min) +min);
 }
-
-// const another = {} ;
-// for(let key in circle){
-//     another[key]= circle[key]
-// }
-
-// const another = Object.assign({color : 'red'}, circle )
-
-const another= { location : 1, ...circle , color : 'red'}
-
-console.log(another);
+console.log(getRandomArbitrary(10,50));
