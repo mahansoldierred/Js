@@ -1,11 +1,19 @@
-Math.PI;
-Math.random();
-Math.round(1,9);
-Math.max(1,2,3,13);
-Math.min(1,2,3,13);
-Math.abs(-1)
+//string primive
+const message = "   Mahan . Coding is Cool   ";
 
-function getRandomArbitrary(min,max){
-    return Math.floor(Math.random() * (max - min) +min);
-}
-console.log(getRandomArbitrary(10,50));
+message.length;
+message[0];
+message[1];
+message.includes('h');
+message.startsWith('mahan');
+message.endsWith('cool');
+message.indexOf('mahan');
+message.replace('codig', 'programing');
+message.toUpperCase();
+message.toLowerCase();
+message.trim();
+message.trimLeft();
+message.trimRight();
+message.split('');
+
+const mess = "mahan . \n coding is cool";
