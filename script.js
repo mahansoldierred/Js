@@ -1,19 +1,15 @@
-//string primive
-const message = "   Mahan . Coding is Cool   ";
+// const message = '\'Mahan\' . \n ' +
+//  '  coding is cool';
 
-message.length;
-message[0];
-message[1];
-message.includes('h');
-message.startsWith('mahan');
-message.endsWith('cool');
-message.indexOf('mahan');
-message.replace('codig', 'programing');
-message.toUpperCase();
-message.toLowerCase();
-message.trim();
-message.trimLeft();
-message.trimRight();
-message.split('');
+//  // {}
+//  // true,false
+//  //' "
+//  // `
+ 
+// const another = `'mahan ' .
+// coding is cool
+// `;
 
-const mess = "mahan . \n coding is cool";
+let name = 'Roghayeh';
+let msg = `hi ${  name } . thank you`;
+console.log(msg)
