@@ -1,10 +1,34 @@
-const numbers = [3,4];
-console.log(numbers)
-//انتها اضافه میکنه
-// numbers.push(5,6);
-//ابتدا اضافه میکنه
-// numbers.unshift(7,8);
-//مقدار اول دادن انذیس دوم اندیسی که حذف شود سوم المنت که اضافه شود در اندیس مشخص شده
-numbers.splice(2,0,"a")
+//primitive
+// const numbers = [1,2,3,1,5,1,4];
+// console.log(numbers.indexOf(1,1));
+// if(numbers.includes(1)){
+//     console.log("yes");
+// }
+//reference
+// const numbers = [
+//     {id : 1 , name : 'a'},
+//     {id : 2 , name : 'b'}
+// ];
+// console.log(numbers.includes({id : 1 , name:'a'}));
 
-console.log(numbers);
+// const courses = [
+//     {id : 1 , name:'a'},
+//     {id : 2 , name :'b'}
+// ];
+
+// const result = numbers.find(function(course){
+//     return course.name === "a"
+// })
+
+// console.log(result);
+
+const courses = [
+    {id : 1 , name:'a'},
+    {id : 2 , name:'b'}
+];
+
+const result = courses.findIndex(function(course){
+    return course.name === 'b'
+})
+
+console.log(result);
