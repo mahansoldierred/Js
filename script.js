@@ -1,14 +1,9 @@
-const courses = [
-    {id : 1 , name:'a'},
-    {id : 2 , name:'b'}
-];
-//فانکشن بی نام
-// const result = courses.find((course)=>{
-//     return course.name === 'a'
-// })
-
-// console.log(result);
-
-const result = courses.find(courses=> courses.name === 'a')
-
+const numbers = [1,2,3,4];
+//اخرین عنصر رو خارج می کنه
+// const last = numbers.pop();
+//خارج کردن عنصر از ابتدا
+// const first = numbers.shift();
+//حذف عنصر از میانه
+const result = numbers.splice(2,1)
+console.log(numbers);
 console.log(result);
