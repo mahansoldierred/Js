@@ -1,9 +1,25 @@
-const numbers = [1,2,3,4];
-//اخرین عنصر رو خارج می کنه
-// const last = numbers.pop();
-//خارج کردن عنصر از ابتدا
-// const first = numbers.shift();
-//حذف عنصر از میانه
-const result = numbers.splice(2,1)
+//one
+// let numbers = [1,2,3,4];
+// let another = numbers;
+
+// numbers = [];
+// console.log(numbers);
+// console.log(another);
+
+//two
+// let numbers = [1,2,3,4];
+// let another = numbers;
+
+// numbers.length = 0;
+
+// console.log(numbers);
+// console.log(another);
+
+//three
+let numbers = [1,2,3,4];
+let another = numbers;
+
+numbers.splice(0,numbers.length);
+
 console.log(numbers);
-console.log(result);
+console.log(another);
