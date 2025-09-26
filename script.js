@@ -1,25 +1,14 @@
-//one
-// let numbers = [1,2,3,4];
-// let another = numbers;
+const first = [{id:1}];
+const second = [4,5,6];
 
-// numbers = [];
-// console.log(numbers);
-// console.log(another);
+const combined = first.concat(second);
+first[0].id = 10;
+console.log(combined);
+console.log(first);
 
-//two
-// let numbers = [1,2,3,4];
-// let another = numbers;
+// const slice = combined.slice(2,4);
+// console.log(slice);
 
-// numbers.length = 0;
 
-// console.log(numbers);
-// console.log(another);
 
-//three
-let numbers = [1,2,3,4];
-let another = numbers;
 
-numbers.splice(0,numbers.length);
-
-console.log(numbers);
-console.log(another);
