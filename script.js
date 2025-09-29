@@ -1,11 +1,5 @@
-const numbers = [1,2,3];
-
-// numbers.forEach(function(number){
-//     console.log(number);
-    
-// })
-
-numbers.forEach((number,i)=>console.log(i,number));
-
-
-
+const message = 'mahan coding is cool';
+const parts = message.split(' ');
+console.log(parts);
+const combined = parts.join('-');
+console.log(combined);
