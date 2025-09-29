@@ -1,15 +1,17 @@
 // const numbers = [1,-1,2,3];
 
-// const allPositive = numbers.every(function(value){
-//     return value >= 0;
-// })
+// const filtered =  numbers.filter(v=> v >= 0)
 
-// console.log(allPositive);
+// console.log(filtered);
 
-const numbers = [1,-1,2,3];
+const users = [
+    {name : 'ali' , age : 18},
+    {name : 'ali' , age : 27},
+    {name : 'ali' , age : 16},
+    {name : 'ali' , age : 14},
+    {name : 'ali' , age : 20},
+]
 
-const atLeastOnePositive = numbers.some(function(value){
-    return value >= 0;
-})
+const result = users.filter(user=> user.age>=18);
 
-console.log(atLeastOnePositive);
+console.log(result);
